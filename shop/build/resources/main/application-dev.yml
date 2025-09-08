@@ -36,6 +36,7 @@ logging:
 app:
   key:
     skey: ${MY_KEY}
+    algo: PBEWithMD5AndDES
 
 
 

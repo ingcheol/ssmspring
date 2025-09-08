@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @Slf4j
 public class MainController {
-
-
-
     @RequestMapping("/")
     public String main(Model model) {
         // Database 데이터를 가지고 온다.

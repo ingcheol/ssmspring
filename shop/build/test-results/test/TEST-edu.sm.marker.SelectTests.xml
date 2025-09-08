@@ -1,243 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.sm.marker.SelectTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-05T05:06:50.292Z" hostname="INCHEOL" time="1.252">
+<testsuite name="edu.sm.marker.SelectTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-08T05:25:55.310Z" hostname="INCHEOL" time="0.206">
   <properties/>
-  <testcase name="contextLoads()" classname="edu.sm.marker.SelectTests" time="1.252"/>
-  <system-out><![CDATA[14:06:46.893 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [edu.sm.marker.SelectTests]: SelectTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:06:47.018 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration edu.sm.ShopApplication for test class edu.sm.marker.SelectTests
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::      (v3.4.10-SNAPSHOT)
-
-2025-09-05T14:06:47.502+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Starting SelectTests using Java 17.0.15 with PID 15096 (started by sinin in C:\java\ssmspring\shop)
-2025-09-05T14:06:47.502+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : The following 1 profile is active: "dev"
-2025-09-05T14:06:48.366+09:00  INFO 15096 --- [    Test worker] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
-2025-09-05T14:06:48.408+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'file [.env]' via location 'optional:file:.env[.properties]' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2025-09-05T14:06:48.410+09:00  INFO 15096 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationInfo [org.springframework.boot.ApplicationInfoPropertySource] to EncryptableMapPropertySourceWrapper
-2025-09-05T14:06:48.430+09:00  INFO 15096 --- [    Test worker] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2025-09-05T14:06:48.502+09:00  INFO 15096 --- [    Test worker] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2025-09-05T14:06:48.518+09:00  INFO 15096 --- [    Test worker] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2025-09-05T14:06:48.549+09:00  INFO 15096 --- [    Test worker] c.u.j.encryptor.DefaultLazyEncryptor     : Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@168ad26f with name: jasyptStringEncryptor
-2025-09-05T14:06:49.612+09:00  INFO 15096 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-09-05T14:06:50.266+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Started SelectTests in 3.1 seconds (process running for 4.259)
-2025-09-05T14:06:51.031+09:00  INFO 15096 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-09-05T14:06:51.337+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection opened. {executed in 289ms} 
-2025-09-05T14:06:51.337+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.new Connection returned 
-2025-09-05T14:06:51.337+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getNetworkTimeout() returned 0
-2025-09-05T14:06:51.337+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.isReadOnly() returned false
-2025-09-05T14:06:51.337+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getAutoCommit() returned true
-2025-09-05T14:06:51.337+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.isValid(1) returned true
-2025-09-05T14:06:51.337+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getTransactionIsolation() returned 4
-2025-09-05T14:06:51.337+09:00  INFO 15096 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@535be281
-2025-09-05T14:06:51.337+09:00  INFO 15096 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-09-05T14:06:51.352+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getAutoCommit() returned true
-2025-09-05T14:06:51.368+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.new PreparedStatement returned 
-2025-09-05T14:06:51.368+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.prepareStatement(SELECT * FROM marker) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@66fff42f
-2025-09-05T14:06:51.384+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. SELECT * FROM marker  {executed in 6 ms}
-2025-09-05T14:06:51.384+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.execute() returned true
-2025-09-05T14:06:51.384+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.new ResultSet returned 
-2025-09-05T14:06:51.384+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7e451790
-2025-09-05T14:06:51.391+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@687f62a5 - Field level information: 
-	com.mysql.cj.result.Field@7857cb1d[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=target,originalColumnName=target,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@7646c9f5[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@7b54a0a4[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=img,originalColumnName=img,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@682d9f21[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lat,originalColumnName=lat,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@2e64ae1a[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lng,originalColumnName=lng,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@6eadd342[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=loc,originalColumnName=loc,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-2025-09-05T14:06:51.399+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getType() returned 1003
-2025-09-05T14:06:51.400+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.400+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.407+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 101
-2025-09-05T14:06:51.407+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
-2025-09-05T14:06:51.409+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
-2025-09-05T14:06:51.409+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5645
-2025-09-05T14:06:51.409+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.991
-2025-09-05T14:06:51.409+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
-2025-09-05T14:06:51.411+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.411+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.411+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 102
-2025-09-05T14:06:51.411+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국2
-2025-09-05T14:06:51.412+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
-2025-09-05T14:06:51.412+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5445
-2025-09-05T14:06:51.412+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.971
-2025-09-05T14:06:51.412+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
-2025-09-05T14:06:51.412+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.412+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.412+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 103
-2025-09-05T14:06:51.414+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
-2025-09-05T14:06:51.414+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
-2025-09-05T14:06:51.414+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5645
-2025-09-05T14:06:51.416+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.971
-2025-09-05T14:06:51.416+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
-2025-09-05T14:06:51.418+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.418+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 104
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국4
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5655
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.981
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 105
-2025-09-05T14:06:51.419+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국5
-2025-09-05T14:06:51.422+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss5.jpg
-2025-09-05T14:06:51.422+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5635
-2025-09-05T14:06:51.422+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.975
-2025-09-05T14:06:51.422+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
-2025-09-05T14:06:51.423+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.423+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.423+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 106
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국6
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss6.jpg
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5655
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.973
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 107
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국7
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss7.jpg
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5665
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.972
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 201
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1761
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.165
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 202
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국2
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1711
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.174
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 203
-2025-09-05T14:06:51.424+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
-2025-09-05T14:06:51.430+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
-2025-09-05T14:06:51.431+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1791
-2025-09-05T14:06:51.431+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.172
-2025-09-05T14:06:51.431+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
-2025-09-05T14:06:51.431+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.431+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.431+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 204
-2025-09-05T14:06:51.431+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국4
-2025-09-05T14:06:51.431+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
-2025-09-05T14:06:51.431+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1731
-2025-09-05T14:06:51.434+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.166
-2025-09-05T14:06:51.434+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
-2025-09-05T14:06:51.434+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 301
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 33.2516
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.416
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 300
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 302
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국2
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 33.2606
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.412
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 300
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.435+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.438+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 303
-2025-09-05T14:06:51.438+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
-2025-09-05T14:06:51.438+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
-2025-09-05T14:06:51.438+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 33.2586
-2025-09-05T14:06:51.438+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.421
-2025-09-05T14:06:51.438+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 300
-2025-09-05T14:06:51.439+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.439+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.439+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 304
-2025-09-05T14:06:51.439+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
-2025-09-05T14:06:51.440+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
-2025-09-05T14:06:51.440+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 33.2616
-2025-09-05T14:06:51.440+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.415
-2025-09-05T14:06:51.440+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 300
-2025-09-05T14:06:51.440+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.440+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.440+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 401
-2025-09-05T14:06:51.441+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점1
-2025-09-05T14:06:51.442+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
-2025-09-05T14:06:51.442+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8104
-2025-09-05T14:06:51.442+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.077
-2025-09-05T14:06:51.442+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
-2025-09-05T14:06:51.444+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.444+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.444+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 402
-2025-09-05T14:06:51.444+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점2
-2025-09-05T14:06:51.444+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
-2025-09-05T14:06:51.445+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8095
-2025-09-05T14:06:51.445+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.076
-2025-09-05T14:06:51.445+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
-2025-09-05T14:06:51.445+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.445+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.445+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 403
-2025-09-05T14:06:51.445+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점3
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8091
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.076
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 404
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점4
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8039
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.071
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
-2025-09-05T14:06:51.446+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.448+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.448+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 405
-2025-09-05T14:06:51.448+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점5
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss5.jpg
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8043
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.069
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 406
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점6
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss6.jpg
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8021
-2025-09-05T14:06:51.449+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.067
-2025-09-05T14:06:51.452+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
-2025-09-05T14:06:51.452+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.452+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.452+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 407
-2025-09-05T14:06:51.453+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점7
-2025-09-05T14:06:51.453+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss7.jpg
-2025-09-05T14:06:51.453+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8004
-2025-09-05T14:06:51.453+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.069
-2025-09-05T14:06:51.453+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
-2025-09-05T14:06:51.453+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.453+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 
+  <testcase name="contextLoads()" classname="edu.sm.marker.SelectTests" time="0.206"/>
+  <system-out><![CDATA[2025-09-08T14:25:55.285+09:00  INFO 22680 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.sm.marker.SelectTests]: SelectTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-08T14:25:55.305+09:00  INFO 22680 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.sm.ShopApplication for test class edu.sm.marker.SelectTests
+2025-09-08T14:25:55.318+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.318+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.new PreparedStatement returned 
+2025-09-08T14:25:55.318+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.prepareStatement(SELECT * FROM marker) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@b75f3f4
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. SELECT * FROM marker  {executed in 17 ms}
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.execute() returned true
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.new ResultSet returned 
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@691a5c3a
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@5570dc21 - Field level information: 
+	com.mysql.cj.result.Field@1477d4e6[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=target,originalColumnName=target,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@30b97fcf[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@b791e6e[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=img,originalColumnName=img,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@583b4af4[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lat,originalColumnName=lat,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@72c175f1[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lng,originalColumnName=lng,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@9fd3b61[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=loc,originalColumnName=loc,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getType() returned 1003
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 101
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5645
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.991
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 102
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국2
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5445
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.971
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 103
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5645
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.971
+2025-09-08T14:25:55.335+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
+2025-09-08T14:25:55.351+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.351+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.351+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 104
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국4
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 8. Connection opened. {executed in 35ms} 
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 8. Connection.new Connection returned 
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5655
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.981
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 8. Connection.isReadOnly() returned false
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.353+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 8. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.355+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 105
+2025-09-08T14:25:55.355+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국5
+2025-09-08T14:25:55.355+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss5.jpg
+2025-09-08T14:25:55.355+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5635
+2025-09-08T14:25:55.355+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.975
+2025-09-08T14:25:55.355+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
+2025-09-08T14:25:55.357+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.357+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.357+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 106
+2025-09-08T14:25:55.357+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국6
+2025-09-08T14:25:55.357+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss6.jpg
+2025-09-08T14:25:55.357+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5655
+2025-09-08T14:25:55.357+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.973
+2025-09-08T14:25:55.357+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
+2025-09-08T14:25:55.359+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.359+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.359+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 107
+2025-09-08T14:25:55.359+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국7
+2025-09-08T14:25:55.359+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss7.jpg
+2025-09-08T14:25:55.359+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5665
+2025-09-08T14:25:55.361+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.972
+2025-09-08T14:25:55.361+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
+2025-09-08T14:25:55.361+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.361+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.361+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 201
+2025-09-08T14:25:55.361+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
+2025-09-08T14:25:55.361+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
+2025-09-08T14:25:55.361+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1761
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.165
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 202
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국2
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1711
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.174
+2025-09-08T14:25:55.363+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
+2025-09-08T14:25:55.366+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.366+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.366+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 203
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1791
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.172
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 204
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국4
+2025-09-08T14:25:55.368+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
+2025-09-08T14:25:55.372+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1731
+2025-09-08T14:25:55.373+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.166
+2025-09-08T14:25:55.373+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
+2025-09-08T14:25:55.373+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.373+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.373+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 301
+2025-09-08T14:25:55.376+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
+2025-09-08T14:25:55.377+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
+2025-09-08T14:25:55.378+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 33.2516
+2025-09-08T14:25:55.378+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.416
+2025-09-08T14:25:55.378+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 300
+2025-09-08T14:25:55.379+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.379+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.379+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 302
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국2
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 33.2606
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.412
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 300
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 303
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 33.2586
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.421
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 300
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.381+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 304
+2025-09-08T14:25:55.386+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
+2025-09-08T14:25:55.386+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
+2025-09-08T14:25:55.386+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 33.2616
+2025-09-08T14:25:55.386+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.415
+2025-09-08T14:25:55.386+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 300
+2025-09-08T14:25:55.386+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.386+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.386+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 401
+2025-09-08T14:25:55.394+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점1
+2025-09-08T14:25:55.394+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
+2025-09-08T14:25:55.394+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8104
+2025-09-08T14:25:55.394+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.077
+2025-09-08T14:25:55.394+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
+2025-09-08T14:25:55.407+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.407+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.409+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 402
+2025-09-08T14:25:55.409+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점2
+2025-09-08T14:25:55.409+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
+2025-09-08T14:25:55.411+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8095
+2025-09-08T14:25:55.411+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.076
+2025-09-08T14:25:55.411+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
+2025-09-08T14:25:55.411+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.411+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.411+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 403
+2025-09-08T14:25:55.411+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점3
+2025-09-08T14:25:55.411+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
+2025-09-08T14:25:55.411+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8091
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.076
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 404
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점4
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8039
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.071
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 405
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점5
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss5.jpg
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8043
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.069
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 406
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점6
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss6.jpg
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8021
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.067
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 407
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 편의점7
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss7.jpg
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 36.8004
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 127.069
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 400
+2025-09-08T14:25:55.415+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.425+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 9. Connection opened. {executed in 31ms} 
+2025-09-08T14:25:55.425+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 9. Connection.new Connection returned 
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 
 |-------|------|--------|--------|--------|----|
 |target |title |img     |lat     |lng     |loc |
 |-------|------|--------|--------|--------|----|
@@ -265,129 +230,129 @@
 |407    |편의점7  |ss7.jpg |36.8004 |127.069 |400 |
 |-------|------|--------|--------|--------|----|
 
-2025-09-05T14:06:51.453+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned false
-2025-09-05T14:06:51.465+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.close() returned void
-2025-09-05T14:06:51.466+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataInformationSchema@58a7ca42
-2025-09-05T14:06:51.471+09:00  INFO 15096 --- [onnection adder] log4jdbc.log4j2                          : 2. Connection opened. {executed in 18ms} 
-2025-09-05T14:06:51.471+09:00  INFO 15096 --- [onnection adder] log4jdbc.log4j2                          : 2. Connection.new Connection returned 
-2025-09-05T14:06:51.471+09:00  INFO 15096 --- [onnection adder] log4jdbc.log4j2                          : 2. Connection.isReadOnly() returned false
-2025-09-05T14:06:51.471+09:00  INFO 15096 --- [onnection adder] log4jdbc.log4j2                          : 2. Connection.getAutoCommit() returned true
-2025-09-05T14:06:51.481+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getMoreResults() returned false
-2025-09-05T14:06:51.481+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getUpdateCount() returned -1
-2025-09-05T14:06:51.481+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.close() returned 
-2025-09-05T14:06:51.487+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=101, title=순대국1, img=ss1.jpg, lat=37.5645, lng=126.991, loc=100)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=102, title=순대국2, img=ss2.jpg, lat=37.5445, lng=126.971, loc=100)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=103, title=순대국3, img=ss3.jpg, lat=37.5645, lng=126.971, loc=100)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=104, title=순대국4, img=ss4.jpg, lat=37.5655, lng=126.981, loc=100)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=105, title=순대국5, img=ss5.jpg, lat=37.5635, lng=126.975, loc=100)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=106, title=순대국6, img=ss6.jpg, lat=37.5655, lng=126.973, loc=100)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=107, title=순대국7, img=ss7.jpg, lat=37.5665, lng=126.972, loc=100)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=201, title=순대국1, img=ss1.jpg, lat=35.1761, lng=129.165, loc=200)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=202, title=순대국2, img=ss2.jpg, lat=35.1711, lng=129.174, loc=200)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=203, title=순대국3, img=ss3.jpg, lat=35.1791, lng=129.172, loc=200)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=204, title=순대국4, img=ss4.jpg, lat=35.1731, lng=129.166, loc=200)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=301, title=순대국1, img=ss1.jpg, lat=33.2516, lng=126.416, loc=300)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=302, title=순대국2, img=ss2.jpg, lat=33.2606, lng=126.412, loc=300)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=303, title=순대국3, img=ss3.jpg, lat=33.2586, lng=126.421, loc=300)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=304, title=순대국3, img=ss4.jpg, lat=33.2616, lng=126.415, loc=300)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=401, title=편의점1, img=ss1.jpg, lat=36.8104, lng=127.077, loc=400)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=402, title=편의점2, img=ss2.jpg, lat=36.8095, lng=127.076, loc=400)
-2025-09-05T14:06:51.491+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=403, title=편의점3, img=ss3.jpg, lat=36.8091, lng=127.076, loc=400)
-2025-09-05T14:06:51.493+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=404, title=편의점4, img=ss4.jpg, lat=36.8039, lng=127.071, loc=400)
-2025-09-05T14:06:51.493+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=405, title=편의점5, img=ss5.jpg, lat=36.8043, lng=127.069, loc=400)
-2025-09-05T14:06:51.493+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=406, title=편의점6, img=ss6.jpg, lat=36.8021, lng=127.067, loc=400)
-2025-09-05T14:06:51.493+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=407, title=편의점7, img=ss7.jpg, lat=36.8004, lng=127.069, loc=400)
-2025-09-05T14:06:51.495+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getAutoCommit() returned true
-2025-09-05T14:06:51.497+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.new PreparedStatement returned 
-2025-09-05T14:06:51.497+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.prepareStatement(SELECT * FROM marker WHERE target=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2ae4c424
-2025-09-05T14:06:51.499+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.setInt(1, 101) returned 
-2025-09-05T14:06:51.499+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. SELECT * FROM marker WHERE target=101  {executed in 0 ms}
-2025-09-05T14:06:51.499+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.execute() returned true
-2025-09-05T14:06:51.499+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.new ResultSet returned 
-2025-09-05T14:06:51.499+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@6978a32a
-2025-09-05T14:06:51.499+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@55665086 - Field level information: 
-	com.mysql.cj.result.Field@233ece92[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=target,originalColumnName=target,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@4a14f7d7[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@66596c4c[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=img,originalColumnName=img,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@15ce261[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lat,originalColumnName=lat,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@54c3e686[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lng,originalColumnName=lng,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@39840986[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=loc,originalColumnName=loc,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-2025-09-05T14:06:51.499+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getType() returned 1003
-2025-09-05T14:06:51.499+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.499+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.503+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 101
-2025-09-05T14:06:51.503+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
-2025-09-05T14:06:51.503+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
-2025-09-05T14:06:51.503+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5645
-2025-09-05T14:06:51.503+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.991
-2025-09-05T14:06:51.503+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
-2025-09-05T14:06:51.503+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.503+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 9. Connection.isReadOnly() returned false
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned false
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 9. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.close() returned void
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataInformationSchema@32e7df65
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getMoreResults() returned false
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getUpdateCount() returned -1
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.close() returned 
+2025-09-08T14:25:55.432+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=101, title=순대국1, img=ss1.jpg, lat=37.5645, lng=126.991, loc=100)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=102, title=순대국2, img=ss2.jpg, lat=37.5445, lng=126.971, loc=100)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=103, title=순대국3, img=ss3.jpg, lat=37.5645, lng=126.971, loc=100)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=104, title=순대국4, img=ss4.jpg, lat=37.5655, lng=126.981, loc=100)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=105, title=순대국5, img=ss5.jpg, lat=37.5635, lng=126.975, loc=100)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=106, title=순대국6, img=ss6.jpg, lat=37.5655, lng=126.973, loc=100)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=107, title=순대국7, img=ss7.jpg, lat=37.5665, lng=126.972, loc=100)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=201, title=순대국1, img=ss1.jpg, lat=35.1761, lng=129.165, loc=200)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=202, title=순대국2, img=ss2.jpg, lat=35.1711, lng=129.174, loc=200)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=203, title=순대국3, img=ss3.jpg, lat=35.1791, lng=129.172, loc=200)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=204, title=순대국4, img=ss4.jpg, lat=35.1731, lng=129.166, loc=200)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=301, title=순대국1, img=ss1.jpg, lat=33.2516, lng=126.416, loc=300)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=302, title=순대국2, img=ss2.jpg, lat=33.2606, lng=126.412, loc=300)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=303, title=순대국3, img=ss3.jpg, lat=33.2586, lng=126.421, loc=300)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=304, title=순대국3, img=ss4.jpg, lat=33.2616, lng=126.415, loc=300)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=401, title=편의점1, img=ss1.jpg, lat=36.8104, lng=127.077, loc=400)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=402, title=편의점2, img=ss2.jpg, lat=36.8095, lng=127.076, loc=400)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=403, title=편의점3, img=ss3.jpg, lat=36.8091, lng=127.076, loc=400)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=404, title=편의점4, img=ss4.jpg, lat=36.8039, lng=127.071, loc=400)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=405, title=편의점5, img=ss5.jpg, lat=36.8043, lng=127.069, loc=400)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=406, title=편의점6, img=ss6.jpg, lat=36.8021, lng=127.067, loc=400)
+2025-09-08T14:25:55.457+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=407, title=편의점7, img=ss7.jpg, lat=36.8004, lng=127.069, loc=400)
+2025-09-08T14:25:55.477+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.477+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.new PreparedStatement returned 
+2025-09-08T14:25:55.477+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.prepareStatement(SELECT * FROM marker WHERE target=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@7df23848
+2025-09-08T14:25:55.477+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.setInt(1, 101) returned 
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. SELECT * FROM marker WHERE target=101  {executed in 11 ms}
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.execute() returned true
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.new ResultSet returned 
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@78324e97
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@73417494 - Field level information: 
+	com.mysql.cj.result.Field@29b0c169[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=target,originalColumnName=target,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@4d1b4fa1[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@27b7e663[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=img,originalColumnName=img,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@5f2ad3d5[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lat,originalColumnName=lat,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@703eead0[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lng,originalColumnName=lng,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@674fd531[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=loc,originalColumnName=loc,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getType() returned 1003
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 101
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 37.5645
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 126.991
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 100
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 
 |-------|------|--------|--------|--------|----|
 |target |title |img     |lat     |lng     |loc |
 |-------|------|--------|--------|--------|----|
 |101    |순대국1  |ss1.jpg |37.5645 |126.991 |100 |
 |-------|------|--------|--------|--------|----|
 
-2025-09-05T14:06:51.503+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned false
-2025-09-05T14:06:51.505+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.close() returned void
-2025-09-05T14:06:51.505+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataInformationSchema@723b8eff
-2025-09-05T14:06:51.505+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getMoreResults() returned false
-2025-09-05T14:06:51.505+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getUpdateCount() returned -1
-2025-09-05T14:06:51.505+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.close() returned 
-2025-09-05T14:06:51.505+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
-2025-09-05T14:06:51.505+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=101, title=순대국1, img=ss1.jpg, lat=37.5645, lng=126.991, loc=100)
-2025-09-05T14:06:51.506+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getAutoCommit() returned true
-2025-09-05T14:06:51.507+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.new PreparedStatement returned 
-2025-09-05T14:06:51.507+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.prepareStatement(SELECT * FROM marker WHERE loc=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@3987a1e8
-2025-09-05T14:06:51.507+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.setInt(1, 200) returned 
-2025-09-05T14:06:51.509+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. SELECT * FROM marker WHERE loc=200  {executed in 2 ms}
-2025-09-05T14:06:51.509+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.execute() returned true
-2025-09-05T14:06:51.509+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.new ResultSet returned 
-2025-09-05T14:06:51.509+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@20d65767
-2025-09-05T14:06:51.509+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@250e8712 - Field level information: 
-	com.mysql.cj.result.Field@becb93a[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=target,originalColumnName=target,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@f60c14e[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@1d1fd2aa[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=img,originalColumnName=img,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
-	com.mysql.cj.result.Field@4c78e00c[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lat,originalColumnName=lat,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@22b3b5d0[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lng,originalColumnName=lng,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-	com.mysql.cj.result.Field@2b506a79[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=loc,originalColumnName=loc,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
-2025-09-05T14:06:51.509+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getType() returned 1003
-2025-09-05T14:06:51.509+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.509+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.510+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 201
-2025-09-05T14:06:51.510+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
-2025-09-05T14:06:51.510+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
-2025-09-05T14:06:51.510+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1761
-2025-09-05T14:06:51.510+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.165
-2025-09-05T14:06:51.510+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
-2025-09-05T14:06:51.510+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.510+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.511+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 202
-2025-09-05T14:06:51.511+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국2
-2025-09-05T14:06:51.511+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
-2025-09-05T14:06:51.511+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1711
-2025-09-05T14:06:51.512+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.174
-2025-09-05T14:06:51.512+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
-2025-09-05T14:06:51.512+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.512+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.512+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 203
-2025-09-05T14:06:51.512+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
-2025-09-05T14:06:51.512+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1791
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.172
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 204
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국4
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1731
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.166
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
-2025-09-05T14:06:51.513+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
-2025-09-05T14:06:51.517+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned false
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.close() returned void
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataInformationSchema@76ee7301
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getMoreResults() returned false
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getUpdateCount() returned -1
+2025-09-08T14:25:55.488+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.close() returned 
+2025-09-08T14:25:55.499+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
+2025-09-08T14:25:55.499+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=101, title=순대국1, img=ss1.jpg, lat=37.5645, lng=126.991, loc=100)
+2025-09-08T14:25:55.499+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.499+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.new PreparedStatement returned 
+2025-09-08T14:25:55.499+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.prepareStatement(SELECT * FROM marker WHERE loc=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@71817f66
+2025-09-08T14:25:55.499+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.setInt(1, 200) returned 
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. SELECT * FROM marker WHERE loc=200  {executed in 0 ms}
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.execute() returned true
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.new ResultSet returned 
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@68feca3a
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@ad585fb - Field level information: 
+	com.mysql.cj.result.Field@fa689db[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=target,originalColumnName=target,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags= PRIMARY_KEY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@75a6bd06[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=title,originalColumnName=title,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@6b170692[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=img,originalColumnName=img,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@4d4bac56[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lat,originalColumnName=lat,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@76980c75[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=lng,originalColumnName=lng,mysqlType=4(FIELD_TYPE_FLOAT),sqlType=7,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@3696d12d[dbName=shopdb,tableName=marker,originalTableName=marker,columnName=loc,originalColumnName=loc,mysqlType=3(FIELD_TYPE_INT),sqlType=4,flags=, charsetIndex=63, charsetName=ISO-8859-1]
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getType() returned 1003
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 201
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국1
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss1.jpg
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1761
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.165
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 202
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국2
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss2.jpg
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1711
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.174
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 203
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국3
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss3.jpg
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1791
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.172
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(target) returned 204
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(title) returned 순대국4
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(img) returned ss4.jpg
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lat) returned 35.1731
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getDouble(lng) returned 129.166
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getInt(loc) returned 200
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 10. Connection opened. {executed in 32ms} 
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 10. Connection.new Connection returned 
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 
 |-------|------|--------|--------|--------|----|
 |target |title |img     |lat     |lng     |loc |
 |-------|------|--------|--------|--------|----|
@@ -397,22 +362,19 @@
 |204    |순대국4  |ss4.jpg |35.1731 |129.166 |200 |
 |-------|------|--------|--------|--------|----|
 
-2025-09-05T14:06:51.517+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned false
-2025-09-05T14:06:51.517+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.close() returned void
-2025-09-05T14:06:51.517+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataInformationSchema@43ca96a0
-2025-09-05T14:06:51.517+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getMoreResults() returned false
-2025-09-05T14:06:51.517+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getUpdateCount() returned -1
-2025-09-05T14:06:51.517+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.close() returned 
-2025-09-05T14:06:51.517+09:00  INFO 15096 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
-2025-09-05T14:06:51.520+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=201, title=순대국1, img=ss1.jpg, lat=35.1761, lng=129.165, loc=200)
-2025-09-05T14:06:51.521+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=202, title=순대국2, img=ss2.jpg, lat=35.1711, lng=129.174, loc=200)
-2025-09-05T14:06:51.521+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=203, title=순대국3, img=ss3.jpg, lat=35.1791, lng=129.172, loc=200)
-2025-09-05T14:06:51.521+09:00  INFO 15096 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=204, title=순대국4, img=ss4.jpg, lat=35.1731, lng=129.166, loc=200)
-2025-09-05T14:06:51.533+09:00  INFO 15096 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection opened. {executed in 21ms} 
-2025-09-05T14:06:51.533+09:00  INFO 15096 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection.new Connection returned 
-2025-09-05T14:06:51.533+09:00  INFO 15096 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection.isReadOnly() returned false
-2025-09-05T14:06:51.533+09:00  INFO 15096 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned false
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.close() returned void
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataInformationSchema@75df4b1d
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 10. Connection.isReadOnly() returned false
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getMoreResults() returned false
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 10. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getUpdateCount() returned -1
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.close() returned 
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
+2025-09-08T14:25:55.504+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=201, title=순대국1, img=ss1.jpg, lat=35.1761, lng=129.165, loc=200)
+2025-09-08T14:25:55.520+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=202, title=순대국2, img=ss2.jpg, lat=35.1711, lng=129.174, loc=200)
+2025-09-08T14:25:55.520+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=203, title=순대국3, img=ss3.jpg, lat=35.1791, lng=129.172, loc=200)
+2025-09-08T14:25:55.520+09:00  INFO 22680 --- [    Test worker] edu.sm.marker.SelectTests                : Marker(target=204, title=순대국4, img=ss4.jpg, lat=35.1731, lng=129.166, loc=200)
 ]]></system-out>
-  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
