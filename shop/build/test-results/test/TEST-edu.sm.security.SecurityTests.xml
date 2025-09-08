@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.sm.security.SecurityTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-08T05:25:55.556Z" hostname="INCHEOL" time="0.394">
+  <properties/>
+  <testcase name="contextLoads()" classname="edu.sm.security.SecurityTests" time="0.394"/>
+  <system-out><![CDATA[2025-09-08T14:25:55.520+09:00  INFO 22680 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.sm.security.SecurityTests]: SecurityTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-08T14:25:55.548+09:00  INFO 22680 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.sm.ShopApplication for test class edu.sm.security.SecurityTests
+2025-09-08T14:25:55.754+09:00  INFO 22680 --- [    Test worker] edu.sm.security.SecurityTests            : pwd:111111
+2025-09-08T14:25:55.754+09:00  INFO 22680 --- [    Test worker] edu.sm.security.SecurityTests            : encPwd:$2a$10$tFXG/3Dh8Wb6EvGdKTuKjuclILl9j.0NXgZBlgBkKElsOohd7LkE2
+2025-09-08T14:25:55.940+09:00  INFO 22680 --- [    Test worker] edu.sm.security.SecurityTests            : matches:true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.sm.ShopApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-08T05:25:50.960Z" hostname="INCHEOL" time="2.428">
+  <properties/>
+  <testcase name="contextLoads()" classname="edu.sm.ShopApplicationTests" time="2.428"/>
+  <system-out><![CDATA[14:25:35.696 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [edu.sm.ShopApplicationTests]: ShopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:25:35.891 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration edu.sm.ShopApplication for test class edu.sm.ShopApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::      (v3.4.10-SNAPSHOT)
+
+2025-09-08T14:25:36.726+09:00  INFO 22680 --- [    Test worker] edu.sm.ShopApplicationTests              : Starting ShopApplicationTests using Java 17.0.15 with PID 22680 (started by sinin in C:\java\ssmspring\shop)
+2025-09-08T14:25:36.726+09:00  INFO 22680 --- [    Test worker] edu.sm.ShopApplicationTests              : The following 1 profile is active: "dev"
+2025-09-08T14:25:38.961+09:00  INFO 22680 --- [    Test worker] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2025-09-08T14:25:39.022+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2025-09-08T14:25:39.039+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2025-09-08T14:25:39.040+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2025-09-08T14:25:39.042+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2025-09-08T14:25:39.043+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2025-09-08T14:25:39.043+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2025-09-08T14:25:39.044+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2025-09-08T14:25:39.044+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2025-09-08T14:25:39.044+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'file [.env]' via location 'optional:file:.env[.properties]' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2025-09-08T14:25:39.045+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2025-09-08T14:25:39.045+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2025-09-08T14:25:39.046+09:00  INFO 22680 --- [    Test worker] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationInfo [org.springframework.boot.ApplicationInfoPropertySource] to EncryptableMapPropertySourceWrapper
+2025-09-08T14:25:39.165+09:00  INFO 22680 --- [    Test worker] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2025-09-08T14:25:39.499+09:00  INFO 22680 --- [    Test worker] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2025-09-08T14:25:39.510+09:00  INFO 22680 --- [    Test worker] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2025-09-08T14:25:39.604+09:00  INFO 22680 --- [    Test worker] c.u.j.encryptor.DefaultLazyEncryptor     : Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@6bcae9 with name: jasyptStringEncryptor
+2025-09-08T14:25:42.417+09:00  WARN 22680 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7a44ac44-1e8d-44cc-8e37-f4485a46ed59
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-08T14:25:42.526+09:00  INFO 22680 --- [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-08T14:25:44.175+09:00  INFO 22680 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-09-08T14:25:50.734+09:00  INFO 22680 --- [    Test worker] edu.sm.ShopApplicationTests              : Started ShopApplicationTests in 14.514 seconds (process running for 16.347)
+4
+호산리
+]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+]]></system-err>
+</testsuite>

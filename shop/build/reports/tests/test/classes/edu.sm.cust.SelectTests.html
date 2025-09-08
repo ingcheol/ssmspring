@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SelectTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SelectTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/edu.sm.cust.html">edu.sm.cust</a> &gt; SelectTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.310s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.310s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2025-09-08T14:25:54.946+09:00  INFO 22680 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.sm.cust.SelectTests]: SelectTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-08T14:25:54.948+09:00  INFO 22680 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.sm.ShopApplication for test class edu.sm.cust.SelectTests
+2025-09-08T14:25:54.967+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection opened. {executed in 40ms} 
+2025-09-08T14:25:54.967+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection.new Connection returned 
+2025-09-08T14:25:54.973+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection.isReadOnly() returned false
+2025-09-08T14:25:54.973+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 3. Connection.getAutoCommit() returned true
+2025-09-08T14:25:54.985+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getAutoCommit() returned true
+2025-09-08T14:25:54.985+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.new PreparedStatement returned 
+2025-09-08T14:25:54.985+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.prepareStatement(SELECT * FROM cust) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@45c28c49
+2025-09-08T14:25:55.023+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. SELECT * FROM cust  {executed in 34 ms}
+2025-09-08T14:25:55.023+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.execute() returned true
+2025-09-08T14:25:55.023+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 4. Connection opened. {executed in 18ms} 
+2025-09-08T14:25:55.037+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 4. Connection.new Connection returned 
+2025-09-08T14:25:55.039+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 4. Connection.isReadOnly() returned false
+2025-09-08T14:25:55.039+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 4. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.070+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.new ResultSet returned 
+2025-09-08T14:25:55.070+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@4e826fd4
+2025-09-08T14:25:55.101+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getMetaData() returned com.mysql.cj.jdbc.result.ResultSetMetaData@58835bba - Field level information: 
+	com.mysql.cj.result.Field@222eda8a[dbName=shopdb,tableName=cust,originalTableName=cust,columnName=cust_id,originalColumnName=cust_id,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@3331800f[dbName=shopdb,tableName=cust,originalTableName=cust,columnName=cust_pwd,originalColumnName=cust_pwd,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@c414eb3[dbName=shopdb,tableName=cust,originalTableName=cust,columnName=cust_name,originalColumnName=cust_name,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@4edd8a0a[dbName=shopdb,tableName=cust,originalTableName=cust,columnName=cust_addr,originalColumnName=cust_addr,mysqlType=253(FIELD_TYPE_VARCHAR),sqlType=12,flags=, charsetIndex=255, charsetName=utf8]
+	com.mysql.cj.result.Field@1a73f3d1[dbName=shopdb,tableName=cust,originalTableName=cust,columnName=cust_regdate,originalColumnName=cust_regdate,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+	com.mysql.cj.result.Field@257d3968[dbName=shopdb,tableName=cust,originalTableName=cust,columnName=cust_update,originalColumnName=cust_update,mysqlType=12(FIELD_TYPE_DATETIME),sqlType=93,flags= BINARY, charsetIndex=63, charsetName=ISO-8859-1]
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getType() returned 1003
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 5. Connection opened. {executed in 33ms} 
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 5. Connection.new Connection returned 
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 5. Connection.isReadOnly() returned false
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 5. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id01
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$Tw0K.QhLkGqozTkFPWZzNOrJUhUJNWZqrCLBwYc8brw/.STZbqBJm
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 이말숙
+2025-09-08T14:25:55.117+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned 2hlKpA9oFl93AGN5ocPbilkqCOSy0pWdS8kNHwcQURY=
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T11:35:14
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T11:35:14
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id69
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$H.7sPcXbxAYoZ3N7d.pNauBKBmLoFjMq21sRnGfYfLUYT2WmsJedG
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 이태준
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned PkEfvpCT2TnFWvgCQsvDqQ==
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T13:49:50
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T13:49:50
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id02
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$Yun2MR52nayd/0Z2S50wM.IBY8Zulgm1f7FT0lciUI9V/RduRkofC
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 이말자
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned QzzsizIRFsOwy6AKgSJgr5D+OvhxdUOffgasCW8KOcs=
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T14:18:10
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T14:18:10
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id03
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$DZoQ8dKi/2oSqF/93kbcvuXeQaJkaKHJPysNFljrwOHG7QeTMtsjO
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 김형경
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned eDubveAXBx95AC2Y82mV87zyOddCmpEpbNMdb5FI6tQ=
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T14:18:23
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T14:18:23
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id04
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$nsdILlUAvuHhYpzm.q4wz./fnxG1CGqxbCvGWDfePVQoqjZeI1uh6
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 정승혁
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned XiZJPVam2L9AIwVNqf5DvBHytvXP4+1gP8Y1FQcZ1ic=
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T14:18:35
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T14:18:35
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id05
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$YcupCZvHLXp3yAmVYR1q3.F0KVAqjkho2wXhyeYXoMPnjKLPe9l4i
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 구민우
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned OMidH9N9UObQu1f9JrPxUkF8FCcWRFXNOW0vEELV3tU=
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T14:18:51
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T14:18:51
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id06
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$w8U8/4UGFpYwsHQ6x69NE.Zyo6xYNerGrYcMHt5j3u3MjMrS0F7ee
+2025-09-08T14:25:55.132+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 김우성
+2025-09-08T14:25:55.148+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned V6PW/scnwqAwcTcxtrnc+OZivT1iLEfiaWE5i9G1mmA=
+2025-09-08T14:25:55.148+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T14:19:01
+2025-09-08T14:25:55.148+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T14:19:01
+2025-09-08T14:25:55.148+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.148+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.148+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id07
+2025-09-08T14:25:55.149+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$zOyrSNJfmBCxftW0O8obDOA6vwLv0WVpBR/I/ksoJBmWT.OPmH6jW
+2025-09-08T14:25:55.149+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 탱구
+2025-09-08T14:25:55.149+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned YkTwkXDrjiksdYXq1JB8U3rtlwuzsK+SLQ3zzDohfvA=
+2025-09-08T14:25:55.150+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T14:19:12
+2025-09-08T14:25:55.150+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T14:19:12
+2025-09-08T14:25:55.151+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.151+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.151+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id08
+2025-09-08T14:25:55.152+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$spkkMf99ScV9eMB0VIn/n.dL9QCNemIv9FPRd6Cj0S6PGdW0WFc/.
+2025-09-08T14:25:55.152+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 신인철
+2025-09-08T14:25:55.153+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned UXUGg7JSBQDre+mUVoIfC1N0eDZMG7r5MHLiIostKOo=
+2025-09-08T14:25:55.153+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T14:19:27
+2025-09-08T14:25:55.154+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T14:19:27
+2025-09-08T14:25:55.154+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.154+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id 09
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$M0lt5KVy1Cz9vpLFSVSot.OnzBvCM3c8bucfKZ4EsqkNbNIyGyfwu
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 김정동
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned TySAirziaTiEZ4tc186Dr9za9pFquMzXCBE8A3Wu1z4=
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T14:19:41
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T14:19:41
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned true
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_id) returned id01
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_pwd) returned $2a$10$hi7oq/q8LvgmSuHV4PBcp.z7AEVqzGCMrbZsB5E3WSkH.XDOTPORC
+2025-09-08T14:25:55.155+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_name) returned 이말숙
+2025-09-08T14:25:55.160+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getString(cust_addr) returned xd32BUVp2/ETS5IHN/aC1TQhbr21L9QZDZql2SX0EtI=
+2025-09-08T14:25:55.160+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_regdate,class java.time.LocalDateTime) returned 2025-09-08T14:25:54
+2025-09-08T14:25:55.160+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.getObject(cust_update,class java.time.LocalDateTime) returned 2025-09-08T14:25:54
+2025-09-08T14:25:55.160+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.isClosed() returned false
+2025-09-08T14:25:55.171+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 
+|--------|-------------------------------------------------------------|----------|---------------------------------------------|-------------|------------|
+|cust_id |cust_pwd                                                     |cust_name |cust_addr                                    |cust_regdate |cust_update |
+|--------|-------------------------------------------------------------|----------|---------------------------------------------|-------------|------------|
+|id01    |$2a$10$Tw0K.QhLkGqozTkFPWZzNOrJUhUJNWZqrCLBwYc8brw/.STZbqBJm |이말숙       |2hlKpA9oFl93AGN5ocPbilkqCOSy0pWdS8kNHwcQURY= |[unread]     |[unread]    |
+|id69    |$2a$10$H.7sPcXbxAYoZ3N7d.pNauBKBmLoFjMq21sRnGfYfLUYT2WmsJedG |이태준       |PkEfvpCT2TnFWvgCQsvDqQ==                     |[unread]     |[unread]    |
+|id02    |$2a$10$Yun2MR52nayd/0Z2S50wM.IBY8Zulgm1f7FT0lciUI9V/RduRkofC |이말자       |QzzsizIRFsOwy6AKgSJgr5D+OvhxdUOffgasCW8KOcs= |[unread]     |[unread]    |
+|id03    |$2a$10$DZoQ8dKi/2oSqF/93kbcvuXeQaJkaKHJPysNFljrwOHG7QeTMtsjO |김형경       |eDubveAXBx95AC2Y82mV87zyOddCmpEpbNMdb5FI6tQ= |[unread]     |[unread]    |
+|id04    |$2a$10$nsdILlUAvuHhYpzm.q4wz./fnxG1CGqxbCvGWDfePVQoqjZeI1uh6 |정승혁       |XiZJPVam2L9AIwVNqf5DvBHytvXP4+1gP8Y1FQcZ1ic= |[unread]     |[unread]    |
+|id05    |$2a$10$YcupCZvHLXp3yAmVYR1q3.F0KVAqjkho2wXhyeYXoMPnjKLPe9l4i |구민우       |OMidH9N9UObQu1f9JrPxUkF8FCcWRFXNOW0vEELV3tU= |[unread]     |[unread]    |
+|id06    |$2a$10$w8U8/4UGFpYwsHQ6x69NE.Zyo6xYNerGrYcMHt5j3u3MjMrS0F7ee |김우성       |V6PW/scnwqAwcTcxtrnc+OZivT1iLEfiaWE5i9G1mmA= |[unread]     |[unread]    |
+|id07    |$2a$10$zOyrSNJfmBCxftW0O8obDOA6vwLv0WVpBR/I/ksoJBmWT.OPmH6jW |탱구        |YkTwkXDrjiksdYXq1JB8U3rtlwuzsK+SLQ3zzDohfvA= |[unread]     |[unread]    |
+|id08    |$2a$10$spkkMf99ScV9eMB0VIn/n.dL9QCNemIv9FPRd6Cj0S6PGdW0WFc/. |신인철       |UXUGg7JSBQDre+mUVoIfC1N0eDZMG7r5MHLiIostKOo= |[unread]     |[unread]    |
+|id 09   |$2a$10$M0lt5KVy1Cz9vpLFSVSot.OnzBvCM3c8bucfKZ4EsqkNbNIyGyfwu |김정동       |TySAirziaTiEZ4tc186Dr9za9pFquMzXCBE8A3Wu1z4= |[unread]     |[unread]    |
+|id01    |$2a$10$hi7oq/q8LvgmSuHV4PBcp.z7AEVqzGCMrbZsB5E3WSkH.XDOTPORC |이말숙       |xd32BUVp2/ETS5IHN/aC1TQhbr21L9QZDZql2SX0EtI= |[unread]     |[unread]    |
+|--------|-------------------------------------------------------------|----------|---------------------------------------------|-------------|------------|
+
+2025-09-08T14:25:55.180+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.next() returned false
+2025-09-08T14:25:55.181+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. ResultSet.close() returned void
+2025-09-08T14:25:55.181+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaDataInformationSchema@15fd3088
+2025-09-08T14:25:55.190+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 6. Connection opened. {executed in 35ms} 
+2025-09-08T14:25:55.191+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 6. Connection.new Connection returned 
+2025-09-08T14:25:55.192+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 6. Connection.isReadOnly() returned false
+2025-09-08T14:25:55.192+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 6. Connection.getAutoCommit() returned true
+2025-09-08T14:25:55.218+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getMoreResults() returned false
+2025-09-08T14:25:55.218+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.getUpdateCount() returned -1
+2025-09-08T14:25:55.218+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. PreparedStatement.close() returned 
+2025-09-08T14:25:55.218+09:00  INFO 22680 --- [    Test worker] log4jdbc.log4j2                          : 1. Connection.clearWarnings() returned 
+2025-09-08T14:25:55.218+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id01, 이말숙, 충청도 아산시, 2025-09-08T11:35:14, 2025-09-08T11:35:14
+2025-09-08T14:25:55.218+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id01, 이말숙, 충청도 아산시, 2025년 09월 08일 11시 35분 14초, 2025년 09월 08일 11시 35분 14초
+2025-09-08T14:25:55.218+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id69, 이태준, 1, 2025-09-08T13:49:50, 2025-09-08T13:49:50
+2025-09-08T14:25:55.218+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id69, 이태준, 1, 2025년 09월 08일 13시 49분 50초, 2025년 09월 08일 13시 49분 50초
+2025-09-08T14:25:55.234+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id02, 이말자, 충청도 아산시, 2025-09-08T14:18:10, 2025-09-08T14:18:10
+2025-09-08T14:25:55.234+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id02, 이말자, 충청도 아산시, 2025년 09월 08일 14시 18분 10초, 2025년 09월 08일 14시 18분 10초
+2025-09-08T14:25:55.234+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id03, 김형경, 충청도 아산시, 2025-09-08T14:18:23, 2025-09-08T14:18:23
+2025-09-08T14:25:55.234+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id03, 김형경, 충청도 아산시, 2025년 09월 08일 14시 18분 23초, 2025년 09월 08일 14시 18분 23초
+2025-09-08T14:25:55.234+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id04, 정승혁, 충청도 아산시, 2025-09-08T14:18:35, 2025-09-08T14:18:35
+2025-09-08T14:25:55.234+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id04, 정승혁, 충청도 아산시, 2025년 09월 08일 14시 18분 35초, 2025년 09월 08일 14시 18분 35초
+2025-09-08T14:25:55.245+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id05, 구민우, 충청도 아산시, 2025-09-08T14:18:51, 2025-09-08T14:18:51
+2025-09-08T14:25:55.245+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id05, 구민우, 충청도 아산시, 2025년 09월 08일 14시 18분 51초, 2025년 09월 08일 14시 18분 51초
+2025-09-08T14:25:55.249+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id06, 김우성, 충청도 아산시, 2025-09-08T14:19:01, 2025-09-08T14:19:01
+2025-09-08T14:25:55.250+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id06, 김우성, 충청도 아산시, 2025년 09월 08일 14시 19분 01초, 2025년 09월 08일 14시 19분 01초
+2025-09-08T14:25:55.252+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id07, 탱구, 충청도 아산시, 2025-09-08T14:19:12, 2025-09-08T14:19:12
+2025-09-08T14:25:55.252+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id07, 탱구, 충청도 아산시, 2025년 09월 08일 14시 19분 12초, 2025년 09월 08일 14시 19분 12초
+2025-09-08T14:25:55.256+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id08, 신인철, 충청도 아산시, 2025-09-08T14:19:27, 2025-09-08T14:19:27
+2025-09-08T14:25:55.256+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id08, 신인철, 충청도 아산시, 2025년 09월 08일 14시 19분 27초, 2025년 09월 08일 14시 19분 27초
+2025-09-08T14:25:55.260+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id 09, 김정동, 충청도 아산시, 2025-09-08T14:19:41, 2025-09-08T14:19:41
+2025-09-08T14:25:55.260+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id 09, 김정동, 충청도 아산시, 2025년 09월 08일 14시 19분 41초, 2025년 09월 08일 14시 19분 41초
+2025-09-08T14:25:55.264+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id01, 이말숙, 충청도 아산시, 2025-09-08T14:25:54, 2025-09-08T14:25:54
+2025-09-08T14:25:55.264+09:00  INFO 22680 --- [    Test worker] edu.sm.cust.SelectTests                  : id01, 이말숙, 충청도 아산시, 2025년 09월 08일 14시 25분 54초, 2025년 09월 08일 14시 25분 54초
+2025-09-08T14:25:55.273+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 7. Connection opened. {executed in 39ms} 
+2025-09-08T14:25:55.273+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 7. Connection.new Connection returned 
+2025-09-08T14:25:55.275+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 7. Connection.isReadOnly() returned false
+2025-09-08T14:25:55.275+09:00  INFO 22680 --- [onnection adder] log4jdbc.log4j2                          : 7. Connection.getAutoCommit() returned true
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at 2025. 9. 8. 오후 2:25:56</p>
+</div>
+</div>
+</body>
+</html>
