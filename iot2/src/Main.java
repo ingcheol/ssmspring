@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String url = "http://127.0.0.1/iot";
+        String url = "http://127.0.0.1:8443/iot";
         Random r = new Random();
         for(int i=0;i<100;i++){
             double lat = 36.800209 + r.nextDouble(0.005);

@@ -36,6 +36,12 @@ dependencies {
     // Properties Encryption
     implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.3'
 
+    // Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    // logback
+    implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
     //tomcat
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
     implementation 'jakarta.servlet:jakarta.servlet-api'
