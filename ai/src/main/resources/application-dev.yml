@@ -1,0 +1,66 @@
+server:
+  port: 80
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+spring:
+  config:
+    import: optional:file:.env[.properties]  # .env import
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  datasource:
+    #url: jdbc:mysql://127.0.0.1:3306/shopdb?serverTimezone=Asia/Seoul
+#    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/shopdb?characterEncoding=utf8
+#    username: smuser
+#    password: ENC(idIWCdznEM3ggslDeTmLJw==)
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: ENC(idIWCdznEM3ggslDeTmLJw==)
+  ai:
+    vectorstore:
+      pgvector:
+        initialize-schema: true
+    openai:
+      api-key: ENC(YGnlvK+vjoazwXyKJlbxMu8IUcmwmCeujtfx0YgSGEJf2qAXvybh5qHuW7UY+TyydjIUMd8Ua0RpESDOtptbCXMc2V+2BU31TmguMvoLK6mN61RgdQHzuQy+Ul4m13hH56w1XxQ4CPO2Kg/uRlyJZYpkD+rs8MXjKyNyfPeVHVHWJlo+kFk8G4cYaaDDTOHHkntOhSe3i1BLNj62JVfAp5iaWgNAb54hN5U62+L27AE=)
+      chat:
+        options:
+          model: gpt-4o
+          temperature: 0.1
+          max_tokens: 1000
+
+#          api-key: ENC(WOyl7STAvmG4s07ZaC+Kti6rRaUNhxzYSnQp7Mhl2Lbmo4MVg0NipP9vmAjLNaYO)
+#          chat:
+#            options:
+#              model: gemini-2.0-flash
+#              temperature: 0.0
+#              max-tokens: 1000
+#            completions-path: /v1/chat/completions
+#            base-url: https://generativelanguage.googleapis.com/v1beta/openai/
+mybatis:
+  type-aliases-package: edu.sm.app.dto
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    root: info
+
+# Application Config
+app:
+  key:
+    skey: ${MY_KEY}
+    #chatgpt: ENC(YGnlvK+vjoazwXyKJlbxMu8IUcmwmCeujtfx0YgSGEJf2qAXvybh5qHuW7UY+TyydjIUMd8Ua0RpESDOtptbCXMc2V+2BU31TmguMvoLK6mN61RgdQHzuQy+Ul4m13hH56w1XxQ4CPO2Kg/uRlyJZYpkD+rs8MXjKyNyfPeVHVHWJlo+kFk8G4cYaaDDTOHHkntOhSe3i1BLNj62JVfAp5iaWgNAb54hN5U62+L27AE=)
+    #gemini: ENC(WOyl7STAvmG4s07ZaC+Kti6rRaUNhxzYSnQp7Mhl2Lbmo4MVg0NipP9vmAjLNaYO)
+
+
+
+
+
+
+
+

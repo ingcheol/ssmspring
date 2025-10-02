@@ -57,7 +57,7 @@ public class LoginController {
     public String updatecustinfo(Model model, Cust cust) throws Exception {
         boolean result = bCryptPasswordEncoder.matches(cust.getCustPwd(),
                 custService.get(cust.getCustId()).getCustPwd());
-        System.out.println(result);
+
         if(result != true){
             model.addAttribute("msg","비밀번호가 틀렸습니다.");
             model.addAttribute("center","error");
@@ -81,6 +81,7 @@ public class LoginController {
         Cust dbCust = custService.get(id);
         if(dbCust != null && bCryptPasswordEncoder.matches(pwd, dbCust.getCustPwd())){
             httpSession.setAttribute("cust",dbCust);
+            log.info(dbCust.getCustId()+","+dbCust.getCustName());
             return "redirect:/";
         }
         model.addAttribute("center","login");
@@ -93,5 +94,24 @@ public class LoginController {
             httpSession.invalidate();
         }
         return "redirect:/";
+    }
+
+    @RequestMapping("/updatepwdimpl")
+    public String updatepwd(Model model, @RequestParam("pwd") String pwd,
+                            @RequestParam("new_pwd") String new_pwd,
+                            HttpSession httpSession) throws Exception {
+        Cust sessionCust = (Cust) httpSession.getAttribute("cust");
+        boolean result = bCryptPasswordEncoder.matches(pwd, sessionCust.getCustPwd());
+        if(result != true){
+            model.addAttribute("msg","비밀번호가 틀렸습니다.");
+        }else{
+            // 신규 비밀번호 변경
+            sessionCust.setCustPwd(bCryptPasswordEncoder.encode(new_pwd));
+            custService.modify(sessionCust);
+            model.addAttribute("msg","비밀번호가 수정 되었습니다.");
+        }
+        model.addAttribute("center","updatepwd");
+
+        return "index";
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.sm.app.repository.OrdersRepository">
+
+    <select id="select" parameterType="Integer" resultType="Orders">
+        SELECT * FROM orders o
+                          INNER JOIN cate c ON o.cate_id=c.cate_id WHERE o.order_id=#{orderId}
+    </select>
+    <select id="selectAllWithCate" resultType="Orders">
+        SELECT * FROM orders o
+                          INNER JOIN cate c ON o.cate_id = c.cate_id
+    </select>
+    <select id="selectAll" resultType="Orders">
+        SELECT * FROM orders
+    </select>
+
+</mapper>

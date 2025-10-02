@@ -10,6 +10,12 @@ server:
       charset: UTF-8
       force: true
 spring:
+  messages:
+    basename: message
+    encoding: utf-8
+    cache-duration: 10
+    fallback-to-system-locale: false
+
   config:
     import: optional:file:.env[.properties]  # .env import
   mvc:
@@ -18,9 +24,13 @@ spring:
       suffix: .jsp
   datasource:
     #url: jdbc:mysql://127.0.0.1:3306/shopdb?serverTimezone=Asia/Seoul
-    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/shopdb?characterEncoding=utf8
-    username: smuser
+    #driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    #url: jdbc:log4jdbc:mysql://127.0.0.1:3306/shopdb?characterEncoding=utf8
+    #username: smuser
+    #password: ENC(idIWCdznEM3ggslDeTmLJw==)
+    #driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
     password: ENC(idIWCdznEM3ggslDeTmLJw==)
 
 mybatis:
@@ -34,14 +44,20 @@ logging:
 
 # Application Config
 app:
+  url:
+    websocketurl: https://10.20.38.210:8443/
+
+  dir:
+    imgsdir: file:///C:/smspring/imgs/     # 화면 출력 용
+    uploadimgsdir: C:/smspring/imgs/    # 파일 Write 용
+    logsdir: file:///C:/smspring/logs/  #화면 출력용
+    logsdirRead: C:/smspring/logs/  # REad용
+
   key:
     skey: ${MY_KEY}
     algo: PBEWithMD5AndDES
-
-
-
-
-
+    wkey: ENC(MFP46TkOl3Lhx4uKwMDjisdTR21J1qRRXU6QuuIha7FWhqenaAvIfR+V3mKx9I4lQ4KwtFvdgpQYkCsYmYrHS/Zb6e3o6pkVzJvjyVR+CNBnolEVjGAYcDaDlCbdurFh5j/NzPSn5UAZW5VXyf/gxSBES50wSxeI)
+    owkey: ENC(uoCSCTMqwmbIo07H+cLxXWLKShnz0+uS+bbT7jeFkpR5ebRnwfvMpduX/Vx4WuNZ)
 
 
 
