@@ -1,17 +1,11 @@
 package edu.sm.controller;
 
 
-import edu.sm.app.dto.Hotel;
-import edu.sm.app.dto.ReviewClassification;
-import edu.sm.app.springai.service2.*;
+
 import edu.sm.app.springai.service3.AiImageService;
 import edu.sm.app.springai.service3.AiSttService;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,8 +13,8 @@ import org.springframework.web.multipart.MultipartFile;
 import reactor.core.publisher.Flux;
 
 import java.io.IOException;
-import java.io.OutputStream;
-import java.util.List;
+import java.util.Base64;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -38,25 +32,35 @@ public class Ai3Controller {
         String text = aisttService.stt(speech);
         return text;
     }
-    @RequestMapping(value = "/target")
-    public String target(@RequestParam("questionText")  String questionText) throws IOException {
+    @RequestMapping(value = "/stt2")
+    public String stt2(@RequestParam("speech") MultipartFile speech) throws IOException {
+        String text = aisttService.stt(speech);
         Map<String, String> views = new ConcurrentHashMap<>();
-        log.info("|"+questionText+"|");
+        log.info("|"+text+"|");
 
         views.put("로그인", "/login");
-        views.put("상품", "/items");
+        views.put("회원가입", "/register");
+        views.put("회원 가입", "/register");
+        views.put("홈", "/");
+        views.put("메인", "/");
 
-        String result = views.get(questionText.trim());
-        log.info(result);
-
+        String result = views.get(text.trim());
         return result;
     }
+
 
     @RequestMapping(value = "/tts")
     public byte[] tts(@RequestParam("text") String text) {
         byte[] bytes = aisttService.tts(text);
         return bytes;
     }
+
+    @RequestMapping(value = "/tts2")
+    public Map<String, String> tts2(@RequestParam("text") String text) {
+        Map<String, String> response = aisttService.tts2(text);
+        return response;
+    }
+
 
     @RequestMapping(value = "/chat-text")
     public Map<String, String> chatText(@RequestParam("question") String question) {
@@ -78,6 +82,24 @@ public class Ai3Controller {
         Flux<String> flux = aiImageService.imageAnalysis(question, attach.getContentType(), attach.getBytes());
         return flux;
     }
+
+    @RequestMapping(value = "/image-analysis2")
+    public Map<String,String> imageAnalysis2(
+            @RequestParam("question") String question,
+            @RequestParam(value="attach", required = false) MultipartFile attach) throws IOException {
+
+        String result = aiImageService.imageAnalysis2(question, attach.getContentType(), attach.getBytes());
+        byte[] audio = aisttService.tts(result);
+        String base64Audio = Base64.getEncoder().encodeToString(audio);
+
+        // 텍스트 답변과 음성 답변을 Map에 저장
+        Map<String, String> response = new HashMap<>();
+        response.put("text", result);
+        response.put("audio", base64Audio);
+
+        return response;
+    }
+
 
     @RequestMapping( value = "/image-generate" )
     public String imageGenerate(@RequestParam("question") String question) {

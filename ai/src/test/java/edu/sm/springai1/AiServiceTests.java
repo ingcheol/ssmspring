@@ -1,4 +1,4 @@
-package edu.sm.ai.springai1;
+package edu.sm.springai1;
 
 import edu.sm.app.springai.service1.AiService;
 import lombok.extern.slf4j.Slf4j;

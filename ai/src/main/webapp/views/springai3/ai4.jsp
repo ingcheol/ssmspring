@@ -28,6 +28,8 @@
             if (!b64Json.includes("Error")) {
                 // <img>에서 생성된(편집된) 이미지 보여주기
                 const base64Src = "data:image/png;base64," + b64Json;
+                console.log('-------------------------------------');
+                console.log(base64Src);
                 const generatedImage = document.getElementById("generatedImage");
                 generatedImage.src = base64Src;
 

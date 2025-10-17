@@ -1,9 +1,10 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <script>
     let center = {
-        adminId:'null',
+        adminId:null,
         init:function(){
             <c:if test="${sessionScope.admin.adminId != null}">
             this.adminId = '${sessionScope.admin.adminId}';
@@ -12,11 +13,22 @@
         },
         connect:function(){
             // http://127.0.0.1:8088/connect/admin
-            let url = '${sseUrl}'+'connect/'+this.adminId;
+            let url = '${sseUrl}'+'connect/'+this.adminId ;
             const sse = new EventSource(url);
             sse.addEventListener('connect', (e) => {
                 const { data: receivedConnectData } = e;
                 console.log('connect event data: ',receivedConnectData);  // "connected!"
+            });
+            sse.addEventListener('aimsg', e => {
+                const { data: data } = e;
+                console.log("msg :",data);
+
+                const result = JSON.parse(data).result;
+                $('#aimsg').html(result.trim());
+
+                const base64Src = "data:image/png;base64," + JSON.parse(data).base64File;
+                const generatedImage = document.getElementById("generatedImage");
+                generatedImage.src = base64Src;
             });
             sse.addEventListener('count', e => {
                 const { data: receivedCount } = e;
@@ -28,7 +40,6 @@
                 console.log("count event data",receivedData);
                 console.log("count event data2",JSON.parse(receivedData).content1);
                 this.display(JSON.parse(receivedData));
-
             });
         },
         display:function(data){
@@ -45,10 +56,12 @@
             $('#progress4').css('width',data.content4/10*100+'%');
             $('#progress4').attr('aria-valuenow',data.content4/10*100);
         }
-    }
+    };
+
     $(function(){
         center.init();
     });
+
 </script>
 
 <!-- Begin Page Content -->
@@ -57,12 +70,15 @@
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+    </div>
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h5 class="h5 mb-0 text-gray-800" id="aimsg"></h5>
+        <img id="generatedImage" src="/img/assistant.png"
+             width="100px;" class="img-fluid" alt="Generated Image" />
     </div>
 
     <!-- Content Row -->
-    <div class="row">
+    <div class="row d-none d-md-flex">
 
         <!-- Earnings (Monthly) Card Example -->
         <div class="col-xl-3 col-md-6 mb-4">
